@@ -1,0 +1,236 @@
+/*
+---01 TYPOGRAPHY SYSTEM---
+
+- Font sizes (px):
+14 / 18 / 24 / 36  
+
+- Font weight:
+Default: 500
+Bold: 700
+
+- Line heights:
+Default: 1.2
+
+- Letter spacing:
+
+---02 COLORS---
+
+- Primary:
+#fff
+#131313
+#ECB235
+
+- Greys: 
+#e9e9e9
+#8e8e8e
+#c4c4c4
+
+- Others:
+#63DA46
+#F24D4D
+- Fonts: 
+#000
+
+---03 WHITESPACE---
+
+- Spacing system (px)
+
+*/
+
+/* -------------------------- */
+/* FONTS */
+/* -------------------------- */
+
+@font-face {
+  font-family: "montserrat";
+  src: url("../fonts/Montserrat-VariableFont_wght.ttf"),
+    url("../fonts/Montserrat-Italic-VariableFont_wght.ttf");
+}
+
+/* -------------------------- */
+/* GLOBAL */
+/* -------------------------- */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "montserrat", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.2;
+
+  color: #000;
+}
+
+.container {
+  /* 1440px + 20px + 20px */
+  max-width: 148rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.grid--3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* -------------------------- */
+/* LINKS / BUTTONS */
+/* -------------------------- */
+
+.btn,
+.btn svg,
+a {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: inherit;
+  background: none;
+
+  color: #000;
+
+  transition: all 0.3s;
+}
+
+.btn--background:link,
+.btn--background:visited {
+  padding: 2rem 9rem;
+  background-color: #fff;
+}
+
+.btn--background:hover,
+.btn--background:active {
+  color: #ecb235;
+  font-weight: 700;
+  transform: scale(1.05);
+  box-shadow: 0 5px 10px rgb(0, 0, 0, 0.3);
+}
+
+.btn--gold:link,
+.btn--gold:visited {
+  padding: 5rem 4rem;
+  background: #ecb235;
+  color: #131313;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 2rem;
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translateY(50%);
+}
+
+.btn--gold:hover,
+.btn--gold:active {
+  box-shadow: inset 0 0 0 3px #ecb235;
+  background: #fff;
+  color: #ecb235;
+}
+
+.btn--gold:hover svg {
+  stroke: #ecb235;
+}
+
+.btn--shopping-cart {
+  width: 6rem;
+  height: 6rem;
+  background-color: #131313;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  /* z-index: 2; */
+}
+
+.btn--shopping-cart:hover {
+  background-color: #292929;
+}
+
+.btn--more-products {
+  padding: 2rem 4rem;
+  border: 1px solid #000;
+  margin: 9rem auto 0;
+
+  display: block;
+}
+
+.btn--more-products:hover {
+  color: #ecb235;
+  border: 1px solid currentColor;
+}
+
+.btn--cta {
+  padding: 5rem 4rem;
+  background-color: #131313;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  gap: 4.6rem;
+}
+
+.btn--cta:hover {
+  color: #ecb235;
+  background-color: #fff;
+  font-weight: 700;
+}
+
+.btn--cta:hover svg {
+  stroke: #ecb235;
+}
+
+/* -------------------------- */
+/* LISTS */
+/* -------------------------- */
+
+ul {
+  list-style: none;
+}
+
+/* -------------------------- */
+/* HEADINGS */
+/* -------------------------- */
+
+h1,
+h2,
+h3 {
+  font-size: 3.6rem;
+  color: #fff;
+}
+
+/* -------------------------- */
+/* INPUTS */
+/* -------------------------- */
+
+/* hide the 'X' */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}

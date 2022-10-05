@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="E-shop, zabývající se prodejem investičních kovů."
+    />
+
+    <link rel="icon" href="#" />
+    <link rel="apple-touch-icon" href="#" />
+    <link rel="manifest" href="#" />
+
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
+
+    <script defer src="./js/script.js"></script>
+
+    <title>Constant-Invest | prodej investičních kovů</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="nav-bar">
+          <!-- insert img-logo / svg-logo -->
+          <a class="main-logo" href="#">LOGO</a>
+          <nav class="main-nav">
+            <ul class="main-nav-list">
+              <li>
+                <a class="main-nav-link link--products" href="#">
+                  <span>Produkty</span>
+                  <svg
+                    width="14"
+                    height="14"
+                    stroke="black"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3.5 5.25L7 8.75L10.5 5.25"
+                      stroke-width="1.2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="main-nav-link" href="#">Akční nabídka</a>
+              </li>
+              <li><a class="main-nav-link" href="#">O nás</a></li>
+              <li>
+                <a class="main-nav-link" href="#">Kontakt</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="nav-search">
+            <form
+              class="form-search"
+              name="form-search"
+              method="get"
+              action="search"
+            >
+              <input
+                class="input-search"
+                type="search"
+                name="search"
+                size="30"
+                placeholder="Napište, co hledáte"
+                required
+              />
+              <button class="btn btn--search" type="submit">
+                <svg
+                  width="24"
+                  height="24"
+                  stroke="black"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M21 20.9999L16.65 16.6499"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
+          <div class="nav-controls">
+            <ul class="nav-controls-list">
+              <li>
+                <a class="nav-controls-link" href="#">
+                  <span>CZK</span>
+                  <svg
+                    width="14"
+                    height="14"
+                    stroke="black"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3.5 5.25L7 8.75L10.5 5.25"
+                      stroke-width="1.2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="nav-controls-link" href="#">
+                  <span class="cart">Košík</span>
+                  <span class="cart-number">2</span>
+                </a>
+              </li>
+              <li>
+                <a class="nav-controls-link link--profile" href="#">
+                  <svg
+                    width="24"
+                    height="24"
+                    stroke="black"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 2C6.477 2 2 6.477 2 12C2 17.523 6.477 22 12 22C17.523 22 22 17.523 22 12C22 6.477 17.523 2 12 2Z"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M4.271 18.346C4.271 18.346 6.5 15.5 12 15.5C17.5 15.5 19.73 18.346 19.73 18.346"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 12C12.7956 12 13.5587 11.6839 14.1213 11.1213C14.6839 10.5587 15 9.79565 15 9C15 8.20435 14.6839 7.44129 14.1213 6.87868C13.5587 6.31607 12.7956 6 12 6C11.2044 6 10.4413 6.31607 9.87868 6.87868C9.31607 7.44129 9 8.20435 9 9C9 9.79565 9.31607 10.5587 9.87868 11.1213C10.4413 11.6839 11.2044 12 12 12V12Z"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="content">
+      <section class="section-hero">
+        <div class="hero-background">
+          <div class="hero-container">
+            <p class="hero-subheading">Lorem ipsum dolor sit</p>
+            <h1 class="heading-primary">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </h1>
+            <a class="btn btn--background" href="#">Zobrazit</a>
+          </div>
+          <div class="dots">
+            <button class="btn dot dot--fill">&nbsp;</button>
+            <button class="btn dot">&nbsp;</button>
+            <button class="btn dot">&nbsp;</button>
+          </div>
+          <div class="hero-scroll container">
+            <a class="scroll" href="#scroll">
+              <div class="scroll-line">
+                <span class="scroll-text">Skroluj</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="section-buy" id="scroll">
+        <div class="container">
+          <div class="buy-cards grid--3-cols">
+            <div class="buy-card buy-card--1">
+              <h3 class="buy-card-heading">
+                Lorem ipsum dolor sit amet, consectetur
+              </h3>
+              <a class="btn btn--background" href="#">Nakupuj</a>
+            </div>
+            <div class="buy-card buy-card--2">
+              <h3 class="buy-card-heading">
+                Lorem ipsum dolor sit amet, consectetur
+              </h3>
+              <a class="btn btn--background" href="#">Nakupuj</a>
+            </div>
+            <div class="buy-card buy-card--3">
+              <h3 class="buy-card-heading">
+                Lorem ipsum dolor sit amet, consectetur
+              </h3>
+              <a class="btn btn--background" href="#">Nakupuj</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-offer">
+        <div class="container">
+          <h2 class="offer-heading">Vyberte si z naši nabídky</h2>
+          <div class="offer-cards grid--4-cols">
+            <a class="offer-link" href="#">
+              <figure class="offer-card">
+                <img
+                  class="offer-card-img"
+                  src="./assets/img-figma/offer1.png"
+                  alt="Zlaté mince"
+                />
+                <div class="offer-card-title">
+                  <p>Investiční</p>
+                  <h3>Zlaté mince</h3>
+                </div>
+              </figure>
+            </a>
+            <a class="offer-link" href="#">
+              <figure class="offer-card">
+                <img
+                  class="offer-card-img"
+                  src="./assets/img-figma/offer2.png"
+                  alt="Zlaté slitky"
+                />
+                <div class="offer-card-title">
+                  <p>Investiční</p>
+                  <h3>Zlaté slitky</h3>
+                </div>
+              </figure>
+            </a>
+            <a class="offer-link" href="#">
+              <figure class="offer-card">
+                <img
+                  class="offer-card-img"
+                  src="./assets/img-figma/offer3.png"
+                  alt="Historické zlaté mince"
+                />
+                <div class="offer-card-title">
+                  <p>Historické</p>
+                  <h3>Zlaté mince</h3>
+                </div>
+              </figure>
+            </a>
+            <a class="offer-link" href="#">
+              <figure class="offer-card">
+                <img
+                  class="offer-card-img"
+                  src="./assets/img-figma/offer4.png"
+                  alt="Zlaté mince ČNB"
+                />
+                <div class="offer-card-title">
+                  <p>Investiční</p>
+                  <h3>Zlaté mince ČNB</h3>
+                </div>
+              </figure>
+            </a>
+            <a class="btn btn--gold" href="#">
+              <span>Zobrazit více</span>
+              <svg
+                width="50"
+                height="16"
+                stroke="black"
+                viewBox="0 0 50 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M41 15L49 8L41 0.999999"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path d="M49 8L1 8L49 8Z" fill="white" />
+                <path
+                  d="M49 8L1 8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="section-product">
+        <div class="container">
+          <nav>
+            <ul class="product-categories">
+              <li class="category category-open"><a href="#">Novinky</a></li>
+              <li class="category">
+                <a href="#">Nejprodávanější</a>
+              </li>
+              <li class="category"><a href="#">Doporučené</a></li>
+            </ul>
+          </nav>
+          <div class="product-cards grid--4-cols">
+            <article class="product-card">
+              <a class="product-link" href="#">&nbsp;</a>
+              <div class="product-banner">
+                <img
+                  class="product-img"
+                  src="./assets/img/product1.jpg"
+                  alt="Zlatá investiční mince American Eagle 1/2 Oz ND"
+                />
+              </div>
+              <div class="product-tags">
+                <ul class="tags">
+                  <li class="tag tag--new">Novinka</li>
+                  <li class="tag tag--sale">Výprodej</li>
+                </ul>
+              </div>
+              <div class="product-info">
+                <h5 class="product-heading">
+                  Zlatá investiční mince American Eagle 1/2 Oz ND
+                </h5>
+                <p class="product-availability availability-in-stock">
+                  Skladem
+                </p>
+                <p class="product-price">43 852 <span>CZK</span></p>
+              </div>
+              <button class="btn btn--shopping-cart">
+                <svg
+                  width="24"
+                  height="24"
+                  stroke="white"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </article>
+            <article class="product-card">
+              <a class="product-link" href="#">&nbsp;</a>
+              <div class="product-banner">
+                <img
+                  class="product-img"
+                  src="./assets/img/product2.jpg"
+                  alt="500g investiční stříbrný slitek Heraeus"
+                />
+              </div>
+              <div class="product-tags">
+                <ul class="tags">
+                  <li class="tag tag--new">Novinka</li>
+                  <li class="tag tag--sale">Výprodej</li>
+                </ul>
+              </div>
+              <div class="product-info">
+                <h5 class="product-heading">
+                  500g investiční stříbrný slitek Heraeus
+                </h5>
+                <p class="product-availability availability-in-stock">
+                  Skladem
+                </p>
+                <p class="product-price">43 852 <span>CZK</span></p>
+              </div>
+            </article>
+            <article class="product-card">
+              <a class="product-link" href="#">&nbsp;</a>
+              <div class="product-banner">
+                <img
+                  class="product-img"
+                  src="./assets/img/product3.jpg"
+                  alt="Stříbrná investiční mince Rok Tygra Lunar III 1 Oz 2022"
+                />
+              </div>
+              <div class="product-tags">
+                <ul class="tags">
+                  <li class="tag tag--new">Novinka</li>
+                  <li class="tag tag--sale">Výprodej</li>
+                </ul>
+              </div>
+              <div class="product-info">
+                <h5 class="product-heading">
+                  Stříbrná investiční mince Rok Tygra Lunar III 1 Oz 2022
+                </h5>
+                <p class="product-availability availability-to-order">
+                  Na objednávku
+                </p>
+                <p class="product-price">43 852 <span>CZK</span></p>
+              </div>
+            </article>
+            <article class="product-card">
+              <a class="product-link" href="#">&nbsp;</a>
+              <div class="product-banner">
+                <img
+                  class="product-img"
+                  src="./assets/img/product4.jpg"
+                  alt="10 x 1g investiční zlatý slitek Argor Heraeus SA"
+                />
+              </div>
+              <div class="product-tags">
+                <ul class="tags">
+                  <li class="tag tag--new">Novinka</li>
+                  <li class="tag tag--sale">Výprodej</li>
+                </ul>
+              </div>
+              <div class="product-info">
+                <h5 class="product-heading">
+                  10 x 1g investiční zlatý slitek Argor Heraeus SA
+                </h5>
+                <p class="product-availability availability-unavailable">
+                  Momentálně nedostupné
+                </p>
+                <p class="product-price">43 852 <span>CZK</span></p>
+              </div>
+            </article>
+          </div>
+          <button class="btn btn--more-products">Zobrazit více produktů</button>
+        </div>
+      </section>
+      <section class="section-blog">
+        <div class="container">
+          <h2 class="blog-heading">Přečtěte si z našeho blogu</h2>
+          <div class="blog-list grid--3-cols">
+            <article class="blog-post">
+              <a href="#" class="blog-article-link">
+                <img
+                  class="blog-post-img"
+                  src="./assets/img-figma/blog1.png"
+                  alt="Titulní obrázek hlava mince"
+                />
+              </a>
+              <div class="blog-post-content">
+                <span class="blog-post-date"
+                  ><time datetime="2021-12-20">20.12.2021</time></span
+                >
+                <h3 class="blog-post-heading">
+                  <a class="blog-heading-link" href="#">Lorem Ipsum</a>
+                </h3>
+                <div class="blog-post-data">
+                  <a class="blog-data-link" href="#">
+                    <svg
+                      width="24"
+                      height="24"
+                      stroke="white"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 2C6.477 2 2 6.477 2 12C2 17.523 6.477 22 12 22C17.523 22 22 17.523 22 12C22 6.477 17.523 2 12 2Z"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M4.271 18.346C4.271 18.346 6.5 15.5 12 15.5C17.5 15.5 19.73 18.346 19.73 18.346"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12 12C12.7956 12 13.5587 11.6839 14.1213 11.1213C14.6839 10.5587 15 9.79565 15 9C15 8.20435 14.6839 7.44129 14.1213 6.87868C13.5587 6.31607 12.7956 6 12 6C11.2044 6 10.4413 6.31607 9.87868 6.87868C9.31607 7.44129 9 8.20435 9 9C9 9.79565 9.31607 10.5587 9.87868 11.1213C10.4413 11.6839 11.2044 12 12 12V12Z"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <p class="blog-post-author">Lukáš</p>
+                  </a>
+                  <span>|</span>
+                  <a class="blog-data-link" href="#"
+                    ><span class="commnets-number">0</span> Comments</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="blog-post">
+              <a href="#" class="blog-article-link">
+                <img
+                  class="blog-post-img"
+                  src="./assets/img-figma/blog2.png"
+                  alt="Titulní obrázek spoření"
+                />
+              </a>
+              <div class="blog-post-content">
+                <span class="blog-post-date"
+                  ><time datetime="2021-12-20">20.12.2021</time></span
+                >
+                <h3 class="blog-post-heading">
+                  <a class="blog-heading-link" href="#">Lorem Ipsum</a>
+                </h3>
+                <div class="blog-post-data">
+                  <a class="blog-data-link" href="#">
+                    <svg
+                      width="24"
+                      height="24"
+                      stroke="white"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 2C6.477 2 2 6.477 2 12C2 17.523 6.477 22 12 22C17.523 22 22 17.523 22 12C22 6.477 17.523 2 12 2Z"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M4.271 18.346C4.271 18.346 6.5 15.5 12 15.5C17.5 15.5 19.73 18.346 19.73 18.346"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12 12C12.7956 12 13.5587 11.6839 14.1213 11.1213C14.6839 10.5587 15 9.79565 15 9C15 8.20435 14.6839 7.44129 14.1213 6.87868C13.5587 6.31607 12.7956 6 12 6C11.2044 6 10.4413 6.31607 9.87868 6.87868C9.31607 7.44129 9 8.20435 9 9C9 9.79565 9.31607 10.5587 9.87868 11.1213C10.4413 11.6839 11.2044 12 12 12V12Z"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <p class="blog-post-author">Lukáš</p>
+                  </a>
+                  <span>|</span>
+                  <a class="blog-data-link" href="#"
+                    ><span class="commnets-number">0</span> Comments</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="blog-post">
+              <a href="#" class="blog-article-link">
+                <img
+                  class="blog-post-img"
+                  src="./assets/img-figma/blog3.png"
+                  alt="Titulní obrázek zalévání stromu peněz"
+                />
+              </a>
+              <div class="blog-post-content">
+                <span class="blog-post-date"
+                  ><time datetime="2021-12-20">20.12.2021</time></span
+                >
+                <h3 class="blog-post-heading">
+                  <a class="blog-heading-link" href="#">Lorem Ipsum</a>
+                </h3>
+                <div class="blog-post-data">
+                  <a class="blog-data-link" href="#">
+                    <svg
+                      width="24"
+                      height="24"
+                      stroke="white"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 2C6.477 2 2 6.477 2 12C2 17.523 6.477 22 12 22C17.523 22 22 17.523 22 12C22 6.477 17.523 2 12 2Z"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M4.271 18.346C4.271 18.346 6.5 15.5 12 15.5C17.5 15.5 19.73 18.346 19.73 18.346"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12 12C12.7956 12 13.5587 11.6839 14.1213 11.1213C14.6839 10.5587 15 9.79565 15 9C15 8.20435 14.6839 7.44129 14.1213 6.87868C13.5587 6.31607 12.7956 6 12 6C11.2044 6 10.4413 6.31607 9.87868 6.87868C9.31607 7.44129 9 8.20435 9 9C9 9.79565 9.31607 10.5587 9.87868 11.1213C10.4413 11.6839 11.2044 12 12 12V12Z"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <p class="blog-post-author">Lukáš</p>
+                  </a>
+                  <span>|</span>
+                  <a class="blog-data-link" href="#"
+                    ><span class="commnets-number">0</span> Comments</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="blog-post">
+              <a href="#" class="blog-article-link">
+                <img
+                  class="blog-post-img"
+                  src="./assets/img-figma/blog4.png"
+                  alt="Titulní obrázek finanční zisk"
+                />
+              </a>
+              <div class="blog-post-content">
+                <span class="blog-post-date"
+                  ><time datetime="2021-12-20">20.12.2021</time></span
+                >
+                <h3 class="blog-post-heading">
+                  <a class="blog-heading-link" href="#">Lorem Ipsum</a>
+                </h3>
+                <div class="blog-post-data">
+                  <a class="blog-data-link" href="#">
+                    <svg
+                      width="24"
+                      height="24"
+                      stroke="white"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 2C6.477 2 2 6.477 2 12C2 17.523 6.477 22 12 22C17.523 22 22 17.523 22 12C22 6.477 17.523 2 12 2Z"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M4.271 18.346C4.271 18.346 6.5 15.5 12 15.5C17.5 15.5 19.73 18.346 19.73 18.346"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12 12C12.7956 12 13.5587 11.6839 14.1213 11.1213C14.6839 10.5587 15 9.79565 15 9C15 8.20435 14.6839 7.44129 14.1213 6.87868C13.5587 6.31607 12.7956 6 12 6C11.2044 6 10.4413 6.31607 9.87868 6.87868C9.31607 7.44129 9 8.20435 9 9C9 9.79565 9.31607 10.5587 9.87868 11.1213C10.4413 11.6839 11.2044 12 12 12V12Z"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <p class="blog-post-author">Lukáš</p>
+                  </a>
+                  <span>|</span>
+                  <a class="blog-data-link" href="#"
+                    ><span class="commnets-number">0</span> Comments</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="blog-post blog-post--5">
+              <a href="#" class="blog-article-link">
+                <img
+                  class="blog-post-img"
+                  src="./assets/img-figma/blog5.png"
+                  alt="Titulní obrázek finanční kalkulace"
+                />
+              </a>
+              <div class="blog-post-content">
+                <span class="blog-post-date"
+                  ><time datetime="2021-12-20">20.12.2021</time></span
+                >
+                <h3 class="blog-post-heading">
+                  <a class="blog-heading-link" href="#">Lorem Ipsum</a>
+                </h3>
+                <div class="blog-post-data">
+                  <a class="blog-data-link" href="#">
+                    <svg
+                      width="24"
+                      height="24"
+                      stroke="white"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 2C6.477 2 2 6.477 2 12C2 17.523 6.477 22 12 22C17.523 22 22 17.523 22 12C22 6.477 17.523 2 12 2Z"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M4.271 18.346C4.271 18.346 6.5 15.5 12 15.5C17.5 15.5 19.73 18.346 19.73 18.346"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12 12C12.7956 12 13.5587 11.6839 14.1213 11.1213C14.6839 10.5587 15 9.79565 15 9C15 8.20435 14.6839 7.44129 14.1213 6.87868C13.5587 6.31607 12.7956 6 12 6C11.2044 6 10.4413 6.31607 9.87868 6.87868C9.31607 7.44129 9 8.20435 9 9C9 9.79565 9.31607 10.5587 9.87868 11.1213C10.4413 11.6839 11.2044 12 12 12V12Z"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <p class="blog-post-author">Lukáš</p>
+                  </a>
+                  <span>|</span>
+                  <a class="blog-data-link" href="#"
+                    ><span class="commnets-number">0</span> Comments</a
+                  >
+                </div>
+              </div>
+            </article>
+            <a class="btn btn--gold" href="#">
+              <span>Zobrazit více</span>
+              <svg
+                width="50"
+                height="16"
+                stroke="black"
+                viewBox="0 0 50 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M41 15L49 8L41 0.999999"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path d="M49 8L1 8L49 8Z" fill="white" />
+                <path
+                  d="M49 8L1 8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="section-feature">
+        <div class="container">
+          <div class="grid-feature grid--4-cols">
+            <div class="feature">
+              <svg
+                width="60"
+                height="60"
+                viewBox="0 0 60 60"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <rect y="0.5" width="60" height="60" fill="url(#pattern0)" />
+                <defs>
+                  <pattern
+                    id="pattern0"
+                    patternContentUnits="objectBoundingBox"
+                    width="1"
+                    height="1"
+                  >
+                    <use
+                      xlink:href="#image0_2_494"
+                      transform="scale(0.0111111)"
+                    />
+                  </pattern>
+                  <image
+                    id="image0_2_494"
+                    width="90"
+                    height="90"
+                    xlink:href="data:image/png;base64,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"
+                  />
+                </defs>
+              </svg>
+              <p class="feature-text">Doprava zdarma na vše od 5 000 Kč</p>
+            </div>
+            <div class="feature">
+              <svg
+                width="60"
+                height="60"
+                viewBox="0 0 60 60"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <rect y="0.5" width="60" height="60" fill="url(#pattern1)" />
+                <defs>
+                  <pattern
+                    id="pattern1"
+                    patternContentUnits="objectBoundingBox"
+                    width="1"
+                    height="1"
+                  >
+                    <use
+                      xlink:href="#image0_2_500"
+                      transform="scale(0.0111111)"
+                    />
+                  </pattern>
+                  <image
+                    id="image0_2_500"
+                    width="90"
+                    height="90"
+                    xlink:href="data:image/png;base64,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"
+                  />
+                </defs>
+              </svg>
+              <p class="feature-text">Okamžitá fixace cen do 50 000 Kč</p>
+            </div>
+            <div class="feature">
+              <svg
+                width="60"
+                height="60"
+                viewBox="0 0 60 60"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <rect y="0.5" width="60" height="60" fill="url(#pattern2)" />
+                <defs>
+                  <pattern
+                    id="pattern2"
+                    patternContentUnits="objectBoundingBox"
+                    width="1"
+                    height="1"
+                  >
+                    <use
+                      xlink:href="#image0_2_506"
+                      transform="scale(0.0111111)"
+                    />
+                  </pattern>
+                  <image
+                    id="image0_2_506"
+                    width="90"
+                    height="90"
+                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABmJLR0QA/wD/AP+gvaeTAAACkElEQVR4nO3bMU9TURQH8P99vEQSCBHK2BEWNTDpW5mb6ujgB5BJPwuOuOsHMNKVERsXSNRFEhbcbJ6praSm9jIoi+GVnpv7Tu+9/H8j9J6e/nP7evuaAxARERERERERpcO4Ljw73Flc6Q93rcEzAPcBLAlLDGHMJ8C+LRfK/c3W6ci1l2lC6dMp6F6naE7Gfw4MzJbL+v9Z4CTLs3aj1T33Ue9KSH1m0gVnhzuLPpsHAANsT8aT9187G3d81QytT3HQK/3hrs/mrxhge3W89txXvdD6FAf971pXE+utdmh9ioMGzD35mplrP/BYK6g+c/mT2OXr/rr+5KPog/X7u4d21trVj5/2vPPps4rDjiYXDFqJw6XjZvK3+Xxo9skdrYRBK6nl0lGH0C47UtzRShi0klouHbG8zTX75I5WwqCVOFw6zOC67/pVh3+hftU/5F8u5tNnFYcdbb/I18zMY+2w+pQHbfBGvGZW1vqrHVif4qDLhXLfAifSdTcxFseN0cVrX/VC61Mc9GbrdJTlWdvnizAWxzbL2+bp59++aobWp9Opo9Hqnv/IywIwLwF8+PvBI2UGAI5g7Yu10a9i/fHRN5deUuiTiIiIyB9vtwml9yJif7wU794pYdBKGLQSBq2EQSuJ4kfUaWI5jXBHK2HQShi0EgathEEriWZyNpbTRRWnHd3rFM3ln4OuNdgD8AjykAFgCdYWsHh1d7za7XWKpksvsUh2cjY0yU7OhibZydnQJDw5G5ZoJmdj/+WF52glDFrJrZ6c1cQdrYRBK4lmcjaW00UV7mglDFrJrZ6c1cQdrYRBK4lmcjaW00WVhCdnw5Lu5Gxgkp2cDU2yk7OhSXpyloiIiIiIiIiI6nEJOUOEnOUzvbEAAAAASUVORK5CYII="
+                  />
+                </defs>
+              </svg>
+              <p class="feature-text">Možnost platby pomocí QR kódu</p>
+            </div>
+            <div class="feature">
+              <svg
+                width="60"
+                height="60"
+                viewBox="0 0 60 60"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <rect y="0.5" width="60" height="60" fill="url(#pattern3)" />
+                <defs>
+                  <pattern
+                    id="pattern3"
+                    patternContentUnits="objectBoundingBox"
+                    width="1"
+                    height="1"
+                  >
+                    <use
+                      xlink:href="#image0_2_513"
+                      transform="scale(0.0111111)"
+                    />
+                  </pattern>
+                  <image
+                    id="image0_2_513"
+                    width="90"
+                    height="90"
+                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABmJLR0QA/wD/AP+gvaeTAAAD/UlEQVR4nO3bT2hcVRTH8e95M0lmAqZp/qBUSqUI4k6IEwmCFu1K2hQqpAtbF4qxmIVWkIoiTItKVRC7KVoRIaYIEbqYRtGNXWkwafYFWwMNtdhONViamTiZd1yo+G+mzX19785kcj7Lx5x7Dz+Se5PDGzDGGGOMMcaYJiWNbmC1ioVcDngOeAwAkSkVOda/47u5hja2Sk0d9Pdf3N3RU+kZ1kBHUbbX+dicwvGKhBObds4teW3QQVMGXTw1dKeG1WcQHRPoW2XZIjCeRt7rHp6ZT7K/KJomaM0TXL0v9wgpRlF2A6mIS4UIX0sox3uWt5yUkc+qcfYZVcOD/nlyYEM1E+wR9AWQe2NdXDiPyoftUv2oa+dcMda1nVtpkCtTDwwEYTiqsBfoTHi7ZYRCEOrRnl1nvkl4r5q8Br3Kyy1pDbk8vQT901RuaypkVOFph8staYvAeDXg6O07Zn9IerPEgo7xckual8sz9qB/PTnYu9wWPhWo7FfYGuPSv6HymlKZABBp2wd6GGiPbQfhvCrvd6zIx127Z67Gti4xBl0s5HIIYyh7gExc6/5NXu4bnnnr33sOHgQ9Ev9elIFPVeVY/66ZM3EseEtB/3W5haLPCzwYR0P1aCXc1P/43KV/Prv8ee6OoMqlejUxieXyDKIUzZ/elikWBl/duLLxoopOJh0yAOnwfz8UsrISqX9HAwIftGtwoVi4/5X509si/bY6N7owOZTtunb9K9DXgd4om0bxx5n8n2dB+klf+wO9IG/cdu36lwuTQ1nX4rRrQTZTfVHhIde6W6eHi4VBVCufwJ/Bqx7y3wcPZzOVA8CbLkXOZ3SxkDsL3ONa12LO9g3POo0LopxxWyLUtJq7XAvcgxYuOte0ngXXAuegVTnhWtNqRNQ5A+egy+X0EWData5lCN8uldredi1zDnrzyHSpVE4/qiqHQM4BTTFYT1gV5JyI5kul9PbNI9OlRjdkjDHGGFNbnIN/rfW8b3i25h5r/fOufMxzDRa0Nxa0Jxa0Jxa0Jxa0Jxa0Jxa0Jxa0Jxa0Jxa0Jxa0Jxa0Jxa0Jxa0Jxa0Jxa0Jxa0Jxa0Jxa0Jxa0Jxa0Jxa0J87vLPx4aqCzXYN3EJ5A2ZBEU01sEeVEaTn9kuuru87fyurQ1LuKPkvN101aXjfCWGemmgb2uxQ6HR2aJ1DU53f7mpKi+zTvlp2d0Z44BS15QkHGk2pmzVAdlzyhS4nzGb1UTh3IZqsVVPcC3a71a9wvoBOl5baDjW7EGGOMMaa2urOOdT7TcHXTGUjdv6PX+UzD1U1nIDX/M7SZRjQ3moHYrMOTmkHbTCOiG8xA6p7R63ym4cpmIMYYY4wxxhhjjFlXfgcr02AgWOPNhAAAAABJRU5ErkJggg=="
+                  />
+                </defs>
+              </svg>
+              <p class="feature-text">Vykupujeme historické i novodobé mince</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-cta">
+        <div class="cta-container">
+          <h2 class="cta-heading">Zůstaňtě s námi v kontaktu</h2>
+          <form class="form-cta" name="form-cta" method="get" action="cta">
+            <input
+              class="input-email"
+              type="email"
+              name="email"
+              size="30"
+              placeholder="@Zadej svuj email"
+              required
+            />
+            <button class="btn btn--cta" type="submit">
+              <span>Odoslať</span>
+              <svg
+                width="50"
+                height="16"
+                stroke="white"
+                viewBox="0 0 50 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M41 15L49 8L41 0.999999"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path d="M49 8L1 8L49 8Z" fill="white" />
+                <path
+                  d="M49 8L1 8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </form>
+          <div class="cta-message-circle">
+            <svg
+              width="544"
+              height="544"
+              viewBox="0 0 544 544"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M271.5 298.542C286.435 298.542 298.542 286.435 298.542 271.5C298.542 256.565 286.435 244.458 271.5 244.458C256.565 244.458 244.458 256.565 244.458 271.5C244.458 286.435 256.565 298.542 271.5 298.542Z"
+                fill="white"
+                fill-opacity="0.1"
+              />
+              <path
+                d="M379.667 298.542C394.601 298.542 406.708 286.435 406.708 271.5C406.708 256.565 394.601 244.458 379.667 244.458C364.732 244.458 352.625 256.565 352.625 271.5C352.625 286.435 364.732 298.542 379.667 298.542Z"
+                fill="white"
+                fill-opacity="0.1"
+              />
+              <path
+                d="M163.333 298.542C178.268 298.542 190.375 286.435 190.375 271.5C190.375 256.565 178.268 244.458 163.333 244.458C148.399 244.458 136.292 256.565 136.292 271.5C136.292 286.435 148.399 298.542 163.333 298.542Z"
+                fill="white"
+                fill-opacity="0.1"
+              />
+              <path
+                d="M462.685 80.3154C418.315 35.6561 359.754 7.87652 297.098 1.76589C234.442 -4.34475 171.618 11.5965 119.455 46.8414C67.2928 82.0862 29.0616 134.426 11.3528 194.837C-6.356 255.248 -2.43273 319.945 22.4463 377.774C25.0393 383.149 25.8901 389.199 24.88 395.08L1.08335 509.467C0.16654 513.852 0.353755 518.397 1.62818 522.692C2.9026 526.987 5.2243 530.899 8.3846 534.075C10.9753 536.646 14.0599 538.667 17.4526 540.015C20.8452 541.363 24.4756 542.01 28.125 541.917H33.5333L149.272 518.661C155.154 517.954 161.119 518.792 166.578 521.095C224.407 545.974 289.104 549.897 349.515 532.188C409.926 514.479 462.266 476.248 497.511 424.086C532.755 371.923 548.697 309.099 542.586 246.443C536.476 183.787 508.696 125.226 464.037 80.8562L462.685 80.3154ZM485.129 306.384C479.842 338.671 467.301 369.339 448.448 396.078C429.596 422.818 404.925 444.934 376.29 460.761C347.656 476.588 315.805 485.714 283.134 487.452C250.463 489.191 217.823 483.496 187.671 470.797C176.977 466.248 165.489 463.859 153.869 463.766C148.792 463.802 143.728 464.254 138.725 465.118L62.4679 480.532L77.8817 404.275C80.9516 387.76 78.9726 370.703 72.2029 355.329C59.5039 325.177 53.8094 292.537 55.5478 259.866C57.2862 227.195 66.4123 195.344 82.2393 166.709C98.0662 138.075 120.182 113.404 146.922 94.5515C173.661 75.6994 204.329 63.1579 236.616 57.8708C270.507 52.3088 305.235 54.8955 337.927 65.4171C370.62 75.9386 400.338 94.0927 424.622 118.378C448.907 142.662 467.061 172.38 477.583 205.073C488.104 237.765 490.691 272.493 485.129 306.384V306.384Z"
+                fill="white"
+                fill-opacity="0.1"
+              />
+            </svg>
+            ;
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <a class="footer-logo" href="#">LOGO</a>
+        <div class="footer-container grid--4-cols">
+          <nav class="footer-col">
+            <p class="footer-heading">Jak nakoupit</p>
+            <ul class="footer-nav">
+              <li>
+                <a class="footer-link" href="#">Platební podmínky</a>
+              </li>
+              <li><a class="footer-link" href="#">Fixační podmínky</a></li>
+              <li>
+                <a class="footer-link" href="#">Dodací a skladovací podmínky</a>
+              </li>
+              <li>
+                <a class="footer-link" href="#">Obchodní podmínky</a>
+              </li>
+              <li>
+                <a class="footer-link" href="#">Ochrana osobních údajů</a>
+              </li>
+              <li><a class="footer-link" href="#">Reklamace</a></li>
+            </ul>
+          </nav>
+          <nav class="footer-col">
+            <p class="footer-heading">Vaše objednávky</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">Stav objednávky</a></li>
+              <li>
+                <a class="footer-link" href="#">Stav poštovní zásilky</a>
+              </li>
+              <li>
+                <a class="footer-link" href="#">Přehled služeb a benefitů</a>
+              </li>
+              <li><a class="footer-link" href="#">Výkupní podmínky</a></li>
+              <li>
+                <a class="footer-link" href="#">Nejčastější dotazy</a>
+              </li>
+              <li>
+                <a class="footer-link" href="#">Grafy investičních kovů</a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="footer-col">
+            <p class="footer-heading">O společnosti</p>
+            <ul class="footer-nav">
+              <li>
+                <a class="footer-link" href="#">Základní informace</a>
+              </li>
+              <li><a class="footer-link" href="#">Pobočky</a></li>
+              <li><a class="footer-link" href="#">Kontakty</a></li>
+              <li><a class="footer-link" href="#">Partneři</a></li>
+              <li><a class="footer-link" href="#">Blog</a></li>
+              <li><a class="footer-link" href="#">Kariéra</a></li>
+            </ul>
+          </nav>
+          <div class="contact-col">
+            <p class="footer-heading">Kontakt</p>
+            <ul class="contact-nav">
+              <li class="social-line">
+                <a class="footer-link" href="#">
+                  <svg
+                    width="24"
+                    height="25"
+                    stroke="white"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17 2.85205H7C4.23858 2.85205 2 5.09674 2 7.86571V17.893C2 20.662 4.23858 22.9067 7 22.9067H17C19.7614 22.9067 22 20.662 22 17.893V7.86571C22 5.09674 19.7614 2.85205 17 2.85205Z"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M16 12.2478C16.1234 13.0823 15.9813 13.9346 15.5938 14.6834C15.2063 15.4323 14.5932 16.0395 13.8416 16.4188C13.0901 16.7981 12.2385 16.9301 11.4078 16.7961C10.5771 16.6621 9.80977 16.2688 9.21485 15.6723C8.61993 15.0757 8.22774 14.3063 8.09408 13.4733C7.96042 12.6404 8.09208 11.7864 8.47034 11.0329C8.8486 10.2793 9.4542 9.66449 10.201 9.27594C10.9478 8.88738 11.7978 8.74484 12.63 8.86858C13.4789 8.99481 14.2649 9.39147 14.8717 9.99997C15.4785 10.6085 15.8741 11.3965 16 12.2478Z"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M17.5 7.3645H17.51"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+                <a class="footer-link" href="#"
+                  ><svg
+                    width="24"
+                    height="25"
+                    stroke="white"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18 2.85254H15C13.6739 2.85254 12.4021 3.38076 11.4645 4.32101C10.5268 5.26125 10 6.53649 10 7.8662V10.8744H7V14.8853H10V22.9072H14V14.8853H17L18 10.8744H14V7.8662C14 7.60026 14.1054 7.34521 14.2929 7.15716C14.4804 6.96911 14.7348 6.86347 15 6.86347H18V2.85254Z"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="footer-link contact-line" href="tel:+421919163181">
+                  <svg
+                    width="24"
+                    height="26"
+                    stroke="white"
+                    viewBox="0 0 24 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22 17.9335V20.9417C22.0012 21.221 21.9441 21.4974 21.8325 21.7533C21.721 22.0092 21.5573 22.2388 21.3521 22.4276C21.1469 22.6164 20.9046 22.7602 20.6408 22.8496C20.3769 22.9391 20.0974 22.9723 19.82 22.9472C16.7429 22.6119 13.787 21.5575 11.19 19.8688C8.77385 18.3293 6.72536 16.2752 5.19002 13.8524C3.5 11.2365 2.44827 8.25815 2.12002 5.15871C2.09504 4.88142 2.1279 4.60195 2.21653 4.3381C2.30515 4.07424 2.4476 3.83178 2.63479 3.62616C2.82199 3.42053 3.04983 3.25624 3.30382 3.14374C3.5578 3.03125 3.83237 2.97302 4.11002 2.97275H7.11002C7.59533 2.96796 8.06582 3.14029 8.43379 3.45761C8.80176 3.77493 9.0421 4.21559 9.11002 4.69745C9.23665 5.66014 9.47147 6.60538 9.81003 7.51513C9.94457 7.87403 9.97369 8.26409 9.89393 8.63907C9.81418 9.01406 9.62889 9.35826 9.36002 9.6309L8.09002 10.9044C9.51358 13.4148 11.5865 15.4933 14.09 16.9208L15.36 15.6473C15.6319 15.3777 15.9752 15.1919 16.3491 15.1119C16.7231 15.032 17.1121 15.0612 17.47 15.1961C18.3773 15.5355 19.32 15.771 20.28 15.898C20.7658 15.9667 21.2094 16.212 21.5266 16.5873C21.8437 16.9627 22.0122 17.4418 22 17.9335Z"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span>+421919123456</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="footer-link contact-line"
+                  href="mailto:info@constantinvest.com"
+                >
+                  <svg
+                    width="22"
+                    height="22"
+                    stroke="white"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3.66665 3.58032H18.3333C19.3416 3.58032 20.1666 4.36997 20.1666 5.3351V15.8638C20.1666 16.8289 19.3416 17.6186 18.3333 17.6186H3.66665C2.65831 17.6186 1.83331 16.8289 1.83331 15.8638V5.3351C1.83331 4.36997 2.65831 3.58032 3.66665 3.58032Z"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M20.1666 5.33521L11 11.4769L1.83331 5.33521"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span>info@constantinvest.com</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-end">
+          <p>Copyright <span class="year">2022</span> Constant Invest</p>
+          <div class="footer-creator">
+            <span> vytvoril <a class="footer-link" href="#">Shoptet</a> </span>
+            <span>|</span>
+            <span>
+              <a class="footer-link" href="#">Lukáš Ballay</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
